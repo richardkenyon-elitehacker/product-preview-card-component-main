@@ -1,0 +1,128 @@
+:root {
+    --black: #1c232b;
+    --grey: #6c7289;
+    --cream: #f2eae2;
+    --white: #ffffff;
+    --green-500: #3d8168;
+    --green-700: #1a4032;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+img.product {
+    /*height: 342px;*/
+    width: 100%;
+    object-fit: contain;
+}
+
+.fraunces-400 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /*font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;*/
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-preset-4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.text-preset-1 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text-preset-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.text-preset-5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.category {
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+.desc {
+    color: var(--grey);
+}
+
+.discount-price {
+    color: var(--green-500);
+}
+
+.price {
+    color: var(--grey);
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+}
+
+.container img {
+    display: block;
+}
+
+.container .product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media(min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
