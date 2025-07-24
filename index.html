@@ -14,9 +14,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img class="product" src="images/image-product-mobile.jpg">
   <div class="container">
-  <!--TODO: need srcset -->
+    <!--TODO: need srcset -->
+    <!-- nope srcset is for loading different sized versions of
+      the same image, we need <picture> for different images at different sizes.
+    <img class="perfume"
+    src="images/image-product-desktop.jpg"
+    srcset="
+      images/image-product-mobile.jpg 700w,
+      images/image-product-desktop.jpg 600w
+    "
+    sizes="(max-width: 600px) 100vw, 40vw"
+    >
+    -->
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg">
+      <source media="(min-width: 601px)" srcset="images/image-product-desktop.jpg">
+      <img class="perfume" src="images/image-product-mobile.jpg">
+    </picture>
     <div class="product">
       <p class="category text-preset-4">Perfume</p>
 
@@ -30,7 +45,7 @@
         <p class="price text-preset-5">$169.99</p>
       </div>
 
-      <button>Add to Cart</button>
+      <button><span class="text-preset-2">Add to Cart</span></button>
     </div>
   </div>
 </body>

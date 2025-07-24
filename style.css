@@ -16,10 +16,10 @@ img {
     display: block;
 }
 
-img.product {
-    /*height: 342px;*/
-    width: 100%;
-    object-fit: contain;
+.perfume {
+    height: 342px;
+    /*object-fit: contain;*/
+    padding: 0;
 }
 
 .fraunces-400 {
@@ -58,6 +58,14 @@ img.product {
   letter-spacing: 0%;
   font-size: 32px;
   font-weight: 700;
+}
+
+.text-preset-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: 0%;
 }
 
 .text-preset-3 {
@@ -100,13 +108,11 @@ img.product {
 }
 
 .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
-    padding: 32px;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .container img {
@@ -114,15 +120,32 @@ img.product {
 }
 
 .container .product {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 32px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.product button {
+    background-color: var(--green-500);
+    border: none;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
 }
 
 @media(min-width: 600px) {
     .container {
         display: flex;
         flex-direction: row;
+        max-height: 700px;
+    }
+
+    picture .perfume {
+        height: 100%;
+        width: 100%;
+        /*object-fit: contain;*/
     }
 }
