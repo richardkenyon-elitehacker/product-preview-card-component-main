@@ -7,6 +7,11 @@
     --green-700: #1a4032;
 }
 
+body {
+    margin: 100px;
+    background-color: var(--cream);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +21,16 @@ img {
     display: block;
 }
 
+/*
+    picture .perfume {
+        height: 100%;
+        width: clamp(300px, 50vw, 450px);
+        object-fit: contain;
+    }
+*/
+
 .perfume {
-    height: 342px;
-    /*object-fit: contain;*/
-    padding: 0;
+    height: clamp(342px, 50%, 400px);
 }
 
 .fraunces-400 {
@@ -113,6 +124,8 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border-radius: 8px;
+    background-color: white;
 }
 
 .container img {
@@ -145,7 +158,12 @@ img {
 
     picture .perfume {
         height: 100%;
+        width: clamp(300px, 50vw, 450px);
+        object-fit: contain;
+    }
+
+    .container .product {
+        max-width: initial;
         width: 100%;
-        /*object-fit: contain;*/
     }
 }
