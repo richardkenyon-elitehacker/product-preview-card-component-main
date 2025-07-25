@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 100px;
+    margin: 50px;
     background-color: var(--cream);
 }
 
@@ -30,7 +30,11 @@ img {
 */
 
 .perfume {
-    height: clamp(342px, 50%, 400px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: auto;
+    display: block;
+    max-width: 100%;
 }
 
 .fraunces-400 {
@@ -123,13 +127,8 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     border-radius: 8px;
     background-color: white;
-}
-
-.container img {
-    display: block;
 }
 
 .container .product {
@@ -149,7 +148,7 @@ img {
     color: white;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 700px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -158,8 +157,10 @@ img {
 
     picture .perfume {
         height: 100%;
-        width: clamp(300px, 50vw, 450px);
+        width: clamp(300px, 50%, 450px);
         object-fit: contain;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
     }
 
     .container .product {
