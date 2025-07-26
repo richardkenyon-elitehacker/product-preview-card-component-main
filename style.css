@@ -194,7 +194,8 @@ img {
     background-color: var(--green-700);
 }
 
-@media(min-width: 600px) {
+/*@media(min-width: 600px) {*/
+@media(min-width: 37.5rem) {
     .container {
         display: flex;
         flex-direction: row;
