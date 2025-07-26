@@ -179,6 +179,12 @@ img {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: ease-out 300ms;
+}
+
+.product button:hover {
+    cursor: pointer;
+    background-color: var(--green-700);
 }
 
 @media(min-width: 600px) {
