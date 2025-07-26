@@ -193,11 +193,12 @@ img {
         flex-direction: row;
         max-height: 700px;
         max-width: 800px;
+        align-items: stretch;
     }
 
     picture .perfume {
-        height: 100%;
         width: 100%;
+        height: 100%;
         max-height: initial;
         min-width: 300px;
     }
@@ -206,5 +207,6 @@ img {
         max-width: initial;
         width: 100%;
         gap: 32px;
+        justify-content: center;
     }
 }
