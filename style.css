@@ -143,7 +143,7 @@ img {
     overflow: hidden;
 }
 
-@media(min-width: 412px) and (max-width: 600px) {
+@media(min-width: 412px) and (max-width: 599px) {
     .container {
         padding-top: 32px;
     }
@@ -152,6 +152,12 @@ img {
         border-radius: 8px;
     }
 
+}
+
+.desc-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .container .product {
@@ -193,5 +199,6 @@ img {
     .container .product {
         max-width: initial;
         width: 100%;
+        gap: 32px;
     }
 }
