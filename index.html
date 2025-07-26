@@ -14,20 +14,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!--TODO: need srcset -->
-    <!-- nope srcset is for loading different sized versions of
-      the same image, we need <picture> for different images at different sizes.
-    <img class="perfume"
-    src="images/image-product-desktop.jpg"
-    srcset="
-      images/image-product-mobile.jpg 700w,
-      images/image-product-desktop.jpg 600w
-    "
-    sizes="(max-width: 600px) 100vw, 40vw"
-    >
-    -->
-    <picture>
+  <main class="container">
+      <picture>
       <source media="(max-width: 599px)" srcset="images/image-product-mobile.jpg">
       <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
       <img class="perfume" src="images/image-product-mobile.jpg">
