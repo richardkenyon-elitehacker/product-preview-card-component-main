@@ -188,8 +188,8 @@ img {
     .container {
         display: flex;
         flex-direction: row;
-        max-height: 43.75rem;
-        max-width: 50rem;
+        max-width: 37.5rem;
+        max-height: 28.5rem;
         align-items: stretch;
     }
 
