@@ -30,17 +30,7 @@ img {
     display: block;
 }
 
-/*
-    picture .perfume {
-        height: 100%;
-        width: clamp(300px, 50vw, 450px);
-        object-fit: contain;
-    }
-*/
-
 .perfume {
-    /*border-top-left-radius: 8px;
-    border-top-right-radius: 8px;*/
     z-index: -5;
     height: auto;
     display: block;
@@ -145,7 +135,7 @@ img {
 /*@media(min-width: 412px) and (max-width: 599px) {*/
 @media (min-width: 25.75rem) and (max-width: 37.4375rem) {
     .container {
-        padding-top: 32px;
+        padding-top: 2rem;
     }
 
     .perfume {
@@ -164,15 +154,15 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 32px;
-    max-width: 500px;
+    padding: 2rem;
+    max-width: 31.25rem;
     box-sizing: border-box;
 }
 
 .product button {
     background-color: var(--green-500);
     border: none;
-    height: 50px;
+    height: 3.125rem;
     border-radius: 8px;
     color: white;
     display: flex;
@@ -198,8 +188,8 @@ img {
     .container {
         display: flex;
         flex-direction: row;
-        max-height: 700px;
-        max-width: 800px;
+        max-height: 43.75rem;
+        max-width: 50rem;
         align-items: stretch;
     }
 
@@ -207,7 +197,7 @@ img {
         width: 100%;
         height: 100%;
         max-height: initial;
-        min-width: 300px;
+        min-width: 18.75rem;
     }
 
     .container .product {
